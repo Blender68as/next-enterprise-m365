@@ -15,10 +15,12 @@ export default function Header() {
     <header>
       <div className="container">
         <nav>
-          <div className="logo flex items-center">
-            <img src="/logo-full.webp" alt="Logo" className="mr-3 h-[50px]" />
-            BehördeDigital
-          </div>
+          <a href="/" onClick={closeMenu}>
+            <div className="logo flex">
+              <img src="/logo-full.webp" alt="Logo" className="mr-4 h-[50px]" />
+              BehördeDigital
+            </div>
+          </a>
 
           <div className={`menu ${menuOpen ? "active" : ""}`}>
             <ul>
@@ -28,12 +30,12 @@ export default function Header() {
                 </a>
               </li>
               <li>
-                <a href="/#services" onClick={closeMenu}>
+                <a href="/#beforeServices" onClick={closeMenu}>
                   Leistungen
                 </a>
               </li>
               <li>
-                <a href="/#about" onClick={closeMenu}>
+                <a href="/#beforeAbout" onClick={closeMenu}>
                   Über uns
                 </a>
               </li>
