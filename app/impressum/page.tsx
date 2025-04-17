@@ -1,4 +1,11 @@
-"use client"
+export const metadata = {
+  title: "Impressum | BehördeDigital",
+  description: "Impressum der BehördeDigital – Ihr Partner für Microsoft 365 in öffentlichen Institutionen.",
+  robots: "noindex, nofollow",
+  icons: {
+    icon: "/logo-full.webp",
+  },
+}
 
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"

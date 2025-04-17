@@ -1,85 +1,18 @@
-"use client"
+import HomePageClient from "./Homepage"
 
-import { useEffect, useState } from "react"
-import About from "@/components/About"
-import Ansprechpartner from "@/components/Ansprechpartner"
-import ContactForm from "@/components/ContactForm"
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
-import Hero from "@/components/Hero"
-import Process from "@/components/Process"
-import Services from "@/components/Services"
-import SlidePanel from "@/components/SlidePanel"
+export const metadata = {
+  title: "BehördeDigital | Microsoft 365 für Behörden",
+  description:
+    "BehördeDigital unterstützt Behörden bei der sicheren Cloud-Migration und Implementierung moderner Microsoft 365-Lösungen. Erfahren Sie in einem kostenfreien Erstgespräch, wie wir Ihre digitale Transformation durch maßgeschneiderte IT-Konzepte vorantreiben.",
+  keywords:
+    "Digitalisierung, Behörden, Cloud-Migration, Microsoft 365, Office365, BehördeDigital, SharePoint, IT-Beratung, IT-Lösungen",
+  authors: [{ name: "BehördeDigital" }],
+  robots: "index, follow",
+  icons: {
+    icon: "/logo-full.webp",
+  },
+}
 
-export default function HomePage() {
-  const [panelContent, setPanelContent] = useState("")
-  const [panelTitle, setPanelTitle] = useState("")
-  const [panelOpen, setPanelOpen] = useState(false)
-
-  const openPanel = (html: string, title: string) => {
-    setPanelContent(html)
-    setPanelTitle(title)
-    setPanelOpen(true)
-  }
-
-  const closePanel = () => {
-    setPanelOpen(false)
-    setPanelContent("")
-    setPanelTitle("")
-  }
-
-  useEffect(() => {
-    const reveal = () => {
-      const reveals = document.querySelectorAll<HTMLElement>("section")
-      reveals.forEach((section) => {
-        const windowHeight = window.innerHeight
-        const elementTop = section.getBoundingClientRect().top
-        const elementVisible = 100
-        if (elementTop < windowHeight - elementVisible) {
-          section.classList.add("visible")
-        } else {
-          section.classList.remove("visible")
-        }
-      })
-    }
-
-    const setupMoreInfoButtons = () => {
-      const buttons = document.querySelectorAll<HTMLElement>(".more-info-btn")
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-          e.preventDefault()
-          const parent = btn.closest(".card")
-          const info = parent?.querySelector(".extra-info") as HTMLElement | null
-          const title = parent?.querySelector("h3")?.textContent || "Weitere Informationen"
-          if (info) {
-            openPanel(info.innerHTML, title)
-          }
-        })
-      })
-    }
-
-    window.addEventListener("scroll", reveal)
-    reveal()
-    setupMoreInfoButtons()
-
-    return () => {
-      window.removeEventListener("scroll", reveal)
-    }
-  }, [])
-
-  return (
-    <>
-      <main>
-        <Header />
-        <Hero />
-        <Services onMoreInfo={openPanel} />
-        <Process />
-        <About />
-        <Ansprechpartner />
-        <ContactForm />
-      </main>
-      <Footer />
-      <SlidePanel open={panelOpen} content={panelContent} title={panelTitle} onClose={closePanel} />
-    </>
-  )
+export default function Page() {
+  return <HomePageClient />
 }
