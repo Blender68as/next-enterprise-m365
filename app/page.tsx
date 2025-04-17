@@ -79,7 +79,7 @@ export default function HomePage() {
         <ContactForm />
       </main>
       <Footer />
-      {panelOpen && <SlidePanel content={panelContent} title={panelTitle} onClose={closePanel} />}
+      {panelOpen && <SlidePanel open={panelOpen} content={panelContent} title={panelTitle} onClose={closePanel} />}
     </>
   )
 }

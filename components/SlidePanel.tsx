@@ -1,23 +1,20 @@
-import { useState } from "react"
-
-export default function SlidePanel({
-  content,
-  title,
-  onClose,
-}: {
-  content: string
+type SlidePanelProps = {
+  open: boolean
   title: string
+  content: string // as HTML (e.g. from .innerHTML)
   onClose: () => void
-}) {
+}
+
+export default function SlidePanel({ open, title, content, onClose }: SlidePanelProps) {
   return (
-    <div className={`slide-panel open`} id="slide-panel">
+    <div id="slide-panel" className={`slide-panel ${open ? "open" : ""}`} aria-hidden={!open}>
       <div className="slide-panel-header">
-        <button className="close-btn" onClick={onClose}>
+        <button className="close-btn" onClick={onClose} aria-label="Schließen">
           &times;
         </button>
-        <span id="slide-panel-title">{title}</span>
+        <span>{title}</span>
       </div>
-      <div className="slide-content" id="slide-content" dangerouslySetInnerHTML={{ __html: content }} />
+      <div className="slide-content" dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   )
 }

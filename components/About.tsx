@@ -1,6 +1,8 @@
+import SectionWrapper from "./SectionWrapper"
+
 export default function About() {
   return (
-    <section id="about" className="container">
+    <SectionWrapper id="about" variant="contained-bg">
       <h2 className="section-title">Über uns</h2>
       <div className="team">
         <p>
@@ -14,6 +16,6 @@ export default function About() {
           </em>
         </p>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

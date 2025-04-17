@@ -1,6 +1,8 @@
+import SectionWrapper from "./SectionWrapper"
+
 export default function Services() {
   return (
-    <section id="services" className="container">
+    <SectionWrapper id="services" variant="contained">
       <h2 className="section-title">Unsere Leistungen</h2>
       <div className="cards">
         <div className="card">
@@ -167,6 +169,6 @@ export default function Services() {
           </a>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

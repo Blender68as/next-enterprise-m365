@@ -2,7 +2,7 @@ import SectionWrapper from "./SectionWrapper"
 
 export default function Process() {
   return (
-    <SectionWrapper id="process" width="full" outerClassName="process">
+    <SectionWrapper id="process" variant="full-bg" outerClassName="process">
       <h2 className="section-title">Unser Prozess</h2>
       <div className="process-flow">
         <div className="process-step">
