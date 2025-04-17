@@ -23,22 +23,22 @@ export default function Header() {
           <div className={`menu ${menuOpen ? "active" : ""}`}>
             <ul>
               <li>
-                <a href="#hero" onClick={closeMenu}>
+                <a href="/" onClick={closeMenu}>
                   Startseite
                 </a>
               </li>
               <li>
-                <a href="#services" onClick={closeMenu}>
+                <a href="/#services" onClick={closeMenu}>
                   Leistungen
                 </a>
               </li>
               <li>
-                <a href="#about" onClick={closeMenu}>
+                <a href="/#about" onClick={closeMenu}>
                   Über uns
                 </a>
               </li>
               <li>
-                <a href="#contact" onClick={closeMenu}>
+                <a href="/#contact" onClick={closeMenu}>
                   Kontakt
                 </a>
               </li>

@@ -1,6 +1,20 @@
 import SectionWrapper from "./SectionWrapper"
 
-export default function Services() {
+type ServicesProps = {
+  onMoreInfo: (content: string, title: string) => void
+}
+
+export default function Services({ onMoreInfo }: ServicesProps) {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const card = e.currentTarget.closest(".card")
+    if (!card) return
+
+    const title = card.querySelector("h3")?.textContent || ""
+    const extraInfo = card.querySelector(".extra-info")?.innerHTML || ""
+    onMoreInfo(extraInfo, title)
+  }
+
   return (
     <SectionWrapper id="services" variant="contained">
       <h2 className="section-title">Unsere Leistungen</h2>
@@ -26,7 +40,7 @@ export default function Services() {
               Microsofts Rechenzentren.
             </p>
           </div>
-          <a href="#" className="link with-icon more-info-btn">
+          <a href="#" className="link with-icon more-info-btn" onClick={handleClick}>
             <span className="plus-icon">+</span> Weitere Informationen
           </a>
         </div>
@@ -52,7 +66,7 @@ export default function Services() {
               Zufriedenheit der Mitarbeiter.
             </p>
           </div>
-          <a href="#" className="link with-icon more-info-btn">
+          <a href="#" className="link with-icon more-info-btn" onClick={handleClick}>
             <span className="plus-icon">+</span> Weitere Informationen
           </a>
         </div>
@@ -82,7 +96,7 @@ export default function Services() {
               Akzeptanz von Cloud-Lösungen in Politik und Verwaltung, weil Risiken transparent gemindert werden.
             </p>
           </div>
-          <a href="#" className="link with-icon more-info-btn">
+          <a href="#" className="link with-icon more-info-btn" onClick={handleClick}>
             <span className="plus-icon">+</span> Weitere Informationen
           </a>
         </div>
@@ -111,7 +125,7 @@ export default function Services() {
               weitere Prozesse eigenständig digitalisiert werden können (Empowerment).
             </p>
           </div>
-          <a href="#" className="link with-icon more-info-btn">
+          <a href="#" className="link with-icon more-info-btn" onClick={handleClick}>
             <span className="plus-icon">+</span> Weitere Informationen
           </a>
         </div>
@@ -140,7 +154,7 @@ export default function Services() {
               demonstriert die Verwaltung Innovationsbereitschaft nach außen.
             </p>
           </div>
-          <a href="#" className="link with-icon more-info-btn">
+          <a href="#" className="link with-icon more-info-btn" onClick={handleClick}>
             <span className="plus-icon">+</span> Weitere Informationen
           </a>
         </div>
@@ -164,7 +178,7 @@ export default function Services() {
               Medienbrüchen, wodurch Arbeitsabläufe optimal unterstützt werden.
             </p>
           </div>
-          <a href="#" className="link with-icon more-info-btn">
+          <a href="#" className="link with-icon more-info-btn" onClick={handleClick}>
             <span className="plus-icon">+</span> Weitere Informationen
           </a>
         </div>

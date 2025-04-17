@@ -72,14 +72,14 @@ export default function HomePage() {
       <main>
         <Header />
         <Hero />
-        <Services />
+        <Services onMoreInfo={openPanel} />
         <Process />
         <About />
         <Ansprechpartner />
         <ContactForm />
       </main>
       <Footer />
-      {panelOpen && <SlidePanel open={panelOpen} content={panelContent} title={panelTitle} onClose={closePanel} />}
+      <SlidePanel open={panelOpen} content={panelContent} title={panelTitle} onClose={closePanel} />
     </>
   )
 }

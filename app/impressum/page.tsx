@@ -1,11 +1,13 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+"use client"
+
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 export default function ImpressumPage() {
   return (
     <>
       <Header />
-      <main className="container" style={{ marginTop: '120px', paddingBottom: '80px' }}>
+      <main className="container" style={{ marginTop: "120px", paddingBottom: "80px" }}>
         <h1 className="section-title">Impressum</h1>
         <strong>SP Experts Personengesellschaft</strong>
         <br />
@@ -25,5 +27,5 @@ export default function ImpressumPage() {
       </main>
       <Footer />
     </>
-  );
+  )
 }
