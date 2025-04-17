@@ -2,12 +2,13 @@
 
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SectionWrapper from "@/components/SectionWrapper"
 
 export default function ImpressumPage() {
   return (
     <>
       <Header />
-      <main className="container" style={{ marginTop: "120px", paddingBottom: "80px" }}>
+      <SectionWrapper id="impressum" variant="contained-bg" outerClassName="visible">
         <h1 className="section-title">Impressum</h1>
         <strong>SP Experts Personengesellschaft</strong>
         <br />
@@ -24,7 +25,7 @@ export default function ImpressumPage() {
         <br />
         <br />
         Umsatzsteuer-ID: DE284841320
-      </main>
+      </SectionWrapper>
       <Footer />
     </>
   )

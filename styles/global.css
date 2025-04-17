@@ -521,3 +521,12 @@
       font-size: 1em;
     }
 }
+
+#datenschutz, #impressum {
+  margin-top: 100px;
+}
+
+#datenschutz.visible, #impressum.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

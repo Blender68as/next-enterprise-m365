@@ -1,13 +1,39 @@
 "use client"
 
+import { useEffect } from "react"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import SectionWrapper from "@/components/SectionWrapper"
 
 export default function DatenschutzPage() {
+  useEffect(() => {
+    const reveal = () => {
+      const reveals = document.querySelectorAll<HTMLElement>("section")
+      reveals.forEach((section) => {
+        const windowHeight = window.innerHeight
+        const elementTop = section.getBoundingClientRect().top
+        const elementVisible = 100
+        if (elementTop < windowHeight - elementVisible) {
+          section.classList.add("visible")
+        } else {
+          section.classList.remove("visible")
+        }
+      })
+    }
+
+    window.addEventListener("scroll", reveal)
+    reveal()
+    return () => window.removeEventListener("scroll", reveal)
+  }, [])
+
   return (
     <>
       <Header />
-      <main className="container" style={{ marginTop: "120px", paddingBottom: "80px" }}>
+      <SectionWrapper
+        id="datenschutz"
+        variant="contained"
+        innerClassName="text-base text-gray-800 leading-relaxed space-y-6"
+      >
         <h1 className="section-title">Datenschutzerklärung</h1>
         <p>
           Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten ausschließlich
@@ -85,7 +111,7 @@ export default function DatenschutzPage() {
         </p>
 
         <p>Stand: April 2025</p>
-      </main>
+      </SectionWrapper>
       <Footer />
     </>
   )
