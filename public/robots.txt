@@ -4,7 +4,7 @@ Disallow: /impressum
 Disallow: /datenschutz
 
 # Host
-Host: https://yourdomain.de
+Host: https://behördedigital.de
 
 # Sitemaps
-Sitemap: https://yourdomain.de/sitemap.xml
+Sitemap: https://behördedigital.de/sitemap.xml
