@@ -1,9 +1,10 @@
 # *
 User-agent: *
-Allow: /
+Disallow: /impressum
+Disallow: /datenschutz
 
 # Host
-Host: https://behördedigital.de
+Host: https://yourdomain.de
 
 # Sitemaps
-Sitemap: https://behördedigital.de/sitemap.xml
+Sitemap: https://yourdomain.de/sitemap.xml

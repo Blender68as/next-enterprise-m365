@@ -1,13 +1,13 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import Footer from "@/components/Footer"
-import Process from "@/components/Process"
 import About from "@/components/About"
 import Ansprechpartner from "@/components/Ansprechpartner"
 import ContactForm from "@/components/ContactForm"
+import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
+import Process from "@/components/Process"
 import Services from "@/components/Services"
 import SlidePanel from "@/components/SlidePanel"
 
