@@ -89,6 +89,9 @@ importers:
       next:
         specifier: 15.2.3
         version: 15.2.3(@babel/core@7.26.0)(@opentelemetry/api@1.7.0)(@playwright/test@1.49.1)(babel-plugin-macros@3.1.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      nodemailer:
+        specifier: ^6.10.1
+        version: 6.10.1
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -186,6 +189,9 @@ importers:
       '@types/node':
         specifier: ^20
         version: 20.17.16
+      '@types/nodemailer':
+        specifier: ^6.4.17
+        version: 6.4.17
       '@types/react':
         specifier: ^19
         version: 19.0.8
@@ -3087,6 +3093,9 @@ packages:
 
   '@types/node@20.17.16':
     resolution: {integrity: sha512-vOTpLduLkZXePLxHiHsBLp98mHGnl8RptV4YAO3HfKO5UHjDvySGbxKtpYfy8Sx5+WKcgc45qNreJJRVM3L6mw==}
+
+  '@types/nodemailer@6.4.17':
+    resolution: {integrity: sha512-I9CCaIp6DTldEg7vyUTZi8+9Vo0hi1/T8gv3C89yk1rSAAzoKQ8H8ki/jBYJSFoH/BisgLP8tkZMlQ91CIquww==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -6004,6 +6013,10 @@ packages:
 
   node-releases@2.0.19:
     resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
+
+  nodemailer@6.10.1:
+    resolution: {integrity: sha512-Z+iLaBGVaSjbIzQ4pX6XV41HrooLsQ10ZWPUehGmuantvzWoDVBnmsdUcOIDM1t+yPor5pDhVlDESgOMEGxhHA==}
+    engines: {node: '>=6.0.0'}
 
   normalize-package-data@6.0.2:
     resolution: {integrity: sha512-V6gygoYb/5EmNI+MEGrWkC+e6+Rr7mTmfHrxDbLzxQogBkgzo76rkok0Am6thgSF7Mv2nLOajAJj5vDJZEFn7g==}
@@ -11159,6 +11172,10 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
+  '@types/nodemailer@6.4.17':
+    dependencies:
+      '@types/node': 20.17.16
+
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/parse-json@4.0.2': {}
@@ -14795,6 +14812,8 @@ snapshots:
       process-on-spawn: 1.1.0
 
   node-releases@2.0.19: {}
+
+  nodemailer@6.10.1: {}
 
   normalize-package-data@6.0.2:
     dependencies:
