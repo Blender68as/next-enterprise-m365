@@ -1,51 +1,51 @@
+"use client"
+
 import { useState } from "react"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
-
-  const closeMenu = () => {
-    setMenuOpen(false)
-  }
+  const toggleMenu = () => setMenuOpen(!menuOpen)
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <header>
       <div className="container">
         <nav>
-          <a href="/" onClick={closeMenu}>
+          <Link href="/" onClick={closeMenu}>
             <div className="logo flex">
-              <img src="/logo-full.webp" alt="Logo" className="mr-4 h-[50px]" />
+              <Image src="/logo-full.webp" alt="Logo" width={50} height={50} className="mr-4" />
               BehördeDigital
             </div>
-          </a>
+          </Link>
 
           <div className={`menu ${menuOpen ? "active" : ""}`}>
             <ul>
               <li>
-                <a href="/" onClick={closeMenu}>
+                <Link href="/" onClick={closeMenu}>
                   Startseite
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#beforeServices" onClick={closeMenu}>
+                <Link href="/#beforeServices" onClick={closeMenu}>
                   Leistungen
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#beforeAbout" onClick={closeMenu}>
+                <Link href="/#beforeAbout" onClick={closeMenu}>
                   Über uns
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/#contact" onClick={closeMenu}>
+                <Link href="/#contact" onClick={closeMenu}>
                   Kontakt
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
+
           <button
             className={`hamburger ${menuOpen ? "open" : ""}`}
             aria-label="Menü öffnen"

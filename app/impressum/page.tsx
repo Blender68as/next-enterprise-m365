@@ -1,7 +1,8 @@
 "use client"
 
-import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import Header from "@/components/Header"
+import SafeEmail from "@/components/SafeEmail"
 import SectionWrapper from "@/components/SectionWrapper"
 
 export default function ImpressumPage() {
@@ -21,7 +22,7 @@ export default function ImpressumPage() {
         <br />
         Vertreten durch: Alexander Springer
         <br />
-        E-Mail: kontakt@BehördeDigital.de
+        E-Mail: <SafeEmail user="kontakt" domain="behördedigital.de" />
         <br />
         <br />
         Umsatzsteuer-ID: DE284841320

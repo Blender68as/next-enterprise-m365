@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://behördedigital.de
+
+# Sitemaps
+Sitemap: https://behördedigital.de/sitemap.xml

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import SectionWrapper from "./SectionWrapper"
 
 export default function Ansprechpartner() {
@@ -7,10 +8,12 @@ export default function Ansprechpartner() {
       <div className="contact-person mt-8 overflow-auto">
         {/* Bild von Alexander Springer */}
         <div className="contact-image float-left mr-8">
-          <img
+          <Image
             src="/alexander-springer.jfif"
             alt="Portrait von Alexander Springer"
-            className="w-[200px] rounded-full"
+            width={200}
+            height={200}
+            className="rounded-full"
           />
         </div>
         {/* Kontaktdetails */}

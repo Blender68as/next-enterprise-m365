@@ -1,7 +1,8 @@
 "use client"
 
-import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import Header from "@/components/Header"
+import SafeEmail from "@/components/SafeEmail"
 import SectionWrapper from "@/components/SectionWrapper"
 
 export default function DatenschutzPage() {
@@ -24,7 +25,7 @@ export default function DatenschutzPage() {
           <br />
           Deutschland
           <br />
-          E-Mail: kontakt@BehördeDigital.de
+          E-Mail: <SafeEmail user="kontakt" domain="behördedigital.de" />
         </p>
         <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
         Beim Besuch unserer Website werden automatisch Informationen durch den Browser des Endgeräts gesendet. Diese
@@ -57,7 +58,11 @@ export default function DatenschutzPage() {
           <li>Widerspruchsrecht (Art. 21 DSGVO)</li>
         </ul>
         <p>
-          Zur Ausübung Ihrer Rechte wenden Sie sich bitte an <strong>datenschutz@BehördeDigital.de</strong>.
+          Zur Ausübung Ihrer Rechte wenden Sie sich bitte an{" "}
+          <strong>
+            <SafeEmail user="datenschutz" domain="behördedigital.de" />
+          </strong>
+          .
         </p>
         <h2>6. Auftragsverarbeiter</h2>
         <p>
