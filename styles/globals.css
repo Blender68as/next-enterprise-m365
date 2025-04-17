@@ -25,12 +25,18 @@
   a:hover {
     color: var(--secondary-color);
   }
+
+  .no-container {
+    width: 100%;
+    margin: 0 auto;
+  }
   
   .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    background: #fff;
   }
   
   /* Header */
@@ -133,6 +139,12 @@
     nav {
       position: relative;
     }
+  }
+
+  .full-width-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* Hero Section */
@@ -291,13 +303,11 @@
   
   /* Main Content */
   main {
-    margin-top: 100px;
     padding: 40px 0;
   }
   
   section {
     padding: 60px 20px;
-    background: #fff;
     margin-bottom: 30px;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);

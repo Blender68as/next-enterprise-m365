@@ -69,8 +69,8 @@ export default function HomePage() {
 
   return (
     <>
-      <Header />
-      <main className="container">
+      <main>
+        <Header />
         <Hero />
         <Services />
         <Process />

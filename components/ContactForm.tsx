@@ -1,7 +1,7 @@
 export default function ContactForm() {
   return (
-    <section id="contact">
-      <div className="container">
+    <div className="container">
+      <section id="contact">
         <h2 className="section-title">Kontakt</h2>
         <div className="contact-form">
           <form action="#" method="post">
@@ -13,7 +13,7 @@ export default function ContactForm() {
             <button type="submit">Anfrage senden</button>
           </form>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
