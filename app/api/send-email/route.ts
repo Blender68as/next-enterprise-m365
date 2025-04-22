@@ -23,6 +23,7 @@ export async function POST(req: Request) {
   `;
 
   console.log('📩 Sending email to:', to);
+  console.log(process.env.SMTP_HOST, process.env.SMTP_PORT, process.env.SMTP_USER);
 
   try {
     const info = await sendMail({ to, subject, text });
