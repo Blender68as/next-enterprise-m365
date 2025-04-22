@@ -39,7 +39,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" onClick={closeMenu}>
+                <Link href="/#beforeContact" onClick={closeMenu}>
                   Kontakt
                 </Link>
               </li>
