@@ -2,7 +2,10 @@ import { NextResponse } from 'next/server';
 import { sendMail } from '@/lib/email';
 
 export async function POST(req: Request) {
-  const { name, email, telefon, institution, message } = await req.json() as { name: string, email: string, telefon?: string, institution?: string, message: string };
+  const body = await req.json();
+  console.log('📩 Incoming request body:', body);
+
+  const { name, email, telefon, institution, message } = body as { name: string, email: string, telefon?: string, institution?: string, message: string };
 
   if (!name || !email || !message) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
@@ -18,6 +21,8 @@ export async function POST(req: Request) {
     Nachricht:
     ${message}
   `;
+
+  console.log('📩 Sending email to:', to);
 
   try {
     const info = await sendMail({ to, subject, text });
