@@ -9,7 +9,7 @@ export default function Ansprechpartner() {
         {/* Bild von Alexander Springer */}
         <div className="contact-image float-left mr-8">
           <Image
-            src="/alexander-springer.jfif"
+            src="/alexander-springer.jpg"
             alt="Portrait von Alexander Springer"
             width={200}
             height={200}
