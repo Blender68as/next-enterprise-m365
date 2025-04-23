@@ -23,6 +23,8 @@
     "coupling-graph": "npx madge --extensions js,jsx,ts,tsx,css,md,mdx ./ --exclude '.next|tailwind.config.js|reset.d.ts|prettier.config.js|postcss.config.js|playwright.config.ts|next.config.js|next-env.d.ts|instrumentation.ts|e2e/|README.md|.storybook/|.eslintrc.js' --image graph.svg"
   },
   "dependencies": {
+    "@azure/identity": "^4.9.1",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
     "@next/bundle-analyzer": "^15.1.6",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-checkbox": "^1.0.4",
@@ -49,6 +51,7 @@
     "@t3-oss/env-nextjs": "^0.10.1",
     "@vercel/otel": "^1.8.3",
     "class-variance-authority": "^0.7.0",
+    "isomorphic-fetch": "^3.0.0",
     "lodash": "^4.17.21",
     "next": "15.2.3",
     "next-sitemap": "^4.2.3",
