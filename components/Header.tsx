@@ -17,7 +17,7 @@ export default function Header() {
           <Link href="/" onClick={closeMenu}>
             <div className="logo flex">
               <Image src="/logo-full.webp" alt="Logo" width={50} height={50} className="mr-4" />
-              BehördeDigital
+              Behörde.Digital
             </div>
           </Link>
 

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://behördedigital.de',
+    siteUrl: 'https://behörde.digital',
     generateRobotsTxt: true,
     exclude: ['/impressum', '/datenschutz'],
     robotsTxtOptions: {

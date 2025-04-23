@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Datenschutzerklärung | BehördeDigital",
-  description: "Impressum der BehördeDigital – Ihr Partner für Microsoft 365 in öffentlichen Institutionen.",
+  title: "Datenschutzerklärung | Behörde.Digital",
+  description: "Impressum der Behörde.Digital – Ihr Partner für Microsoft 365 in öffentlichen Institutionen.",
   robots: "noindex, nofollow",
   icons: {
     icon: "/logo-full.webp",
@@ -32,7 +32,7 @@ export default function DatenschutzPage() {
           <br />
           Deutschland
           <br />
-          E-Mail: <SafeEmail user="kontakt" domain="behördedigital.de" />
+          E-Mail: <SafeEmail user="kontakt" domain="Behörde.Digital" />
         </p>
         <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
         Beim Besuch unserer Website werden automatisch Informationen durch den Browser des Endgeräts gesendet. Diese
@@ -67,7 +67,7 @@ export default function DatenschutzPage() {
         <p>
           Zur Ausübung Ihrer Rechte wenden Sie sich bitte an{" "}
           <strong>
-            <SafeEmail user="datenschutz" domain="behördedigital.de" />
+            <SafeEmail user="datenschutz" domain="Behörde.Digital" />
           </strong>
           .
         </p>

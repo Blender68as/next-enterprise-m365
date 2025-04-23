@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Impressum | BehördeDigital",
-  description: "Impressum der BehördeDigital – Ihr Partner für Microsoft 365 in öffentlichen Institutionen.",
+  title: "Impressum | Behörde.Digital",
+  description: "Impressum der Behörde.Digital – Ihr Partner für Microsoft 365 in öffentlichen Institutionen.",
   robots: "noindex, nofollow",
   icons: {
     icon: "/logo-full.webp",
@@ -29,7 +29,7 @@ export default function ImpressumPage() {
         <br />
         Vertreten durch: Alexander Springer
         <br />
-        E-Mail: <SafeEmail user="kontakt" domain="behördedigital.de" />
+        E-Mail: <SafeEmail user="kontakt" domain="Behörde.Digital" />
         <br />
         <br />
         Umsatzsteuer-ID: DE284841320

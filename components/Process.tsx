@@ -12,7 +12,7 @@ export default function Process() {
         </div>
         <div className="process-step">
           <div className="step-number">2</div>
-          <h3>Umsetzung durch BehördeDigital</h3>
+          <h3>Umsetzung durch Behörde.Digital</h3>
           <p>Unser Expertenteam realisiert eine maßgeschneiderte Cloud-Lösung für Ihre Behörde.</p>
         </div>
         <div className="process-step">
