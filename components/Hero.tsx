@@ -8,7 +8,7 @@ export default function Hero() {
         Wir unterstützen öffentliche Einrichtungen bei der sicheren Cloud-Migration und Implementierung moderner
         Microsoft 365 Lösungen.
       </p>
-      <a href="#contact" className="cta">
+      <a href="#beforeContact" className="cta">
         Kontakt aufnehmen
       </a>
       <div className="free-note">Das erste Gespräch ist kostenfrei!</div>
