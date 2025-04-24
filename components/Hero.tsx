@@ -9,9 +9,9 @@ export default function Hero() {
         Microsoft 365 Lösungen.
       </p>
       <a href="#beforeContact" className="cta">
-        Kontakt aufnehmen
+        Jetzt kostenfreies Erstgespräch
       </a>
-      <div className="free-note">Das erste Gespräch ist kostenfrei!</div>
+      {/* <div className="free-note">Das erste Gespräch ist kostenfrei!</div> */}
     </SectionWrapper>
   )
 }
