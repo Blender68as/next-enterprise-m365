@@ -249,6 +249,7 @@ export default function Services({ onMoreInfo }: ServicesProps) {
                 <li>Workshop zu KI-Ethik, Datenschutz &amp; ITIL-konformen Prozessen</li>
                 <li>Erfolgskontrolle und Roadmap für den Roll-out</li>
               </ul>
+              <br />
               <h3>Mehrwert für die Behörde</h3>
               <ul>
                 <li>Frühe Praxiserfahrung mit KI-Technologien</li>
